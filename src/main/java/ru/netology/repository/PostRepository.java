@@ -20,6 +20,9 @@ public class PostRepository {
   public Optional<Post> getById(long id) {
     return Optional.ofNullable(posts.get(id));
   }
+  public Post delete(Post post){
+    return null;
+  }
 
   public Post save(Post post) {
     if (post.getId() == 0) {
